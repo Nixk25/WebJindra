@@ -21,14 +21,30 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-top">
-        <figure class="logo">
-          <img src="./images/logo.svg" alt="logo for vault games" />
-        </figure>
+        <div class="nav-left">
+          <i class="fa-solid fa-bars"></i>
+          <figure class="logo">
+            <img src="./images/logo.svg" alt="logo for vault games" />
+          </figure>
+        </div>
         <div class="nav-right">
           <i class="fa-solid fa-calendar"></i>
           <i class="fa-solid fa-heart"></i>
           <i class="fa-solid fa-cart-shopping"></i>
           <div class="user">J</div>
+        </div>
+        <div class="menu">
+          <div class="overlay">
+            <ul class="menu-list">
+              <li>PlayStation</li>
+              <li>Xbox</li>
+              <li>Nintendo</li>
+              <li>PC</li>
+              <li>Bazar</li>
+              <li>Přislušenství</li>
+            </ul>
+            <div class="close">X</div>
+          </div>
         </div>
       </div>
       <div class="line"></div>
@@ -48,28 +64,30 @@
       <!-- Sekce hero -->
       <section class="hero">
         <main class="hero-content">
-          <div class="container">
-            <h1>Vítejte ve VaultGames</h1>
-            <p>
-              Jsme domovem pro vaše nejžhavější herní příběhy! Prozkoumejte
-              naši skvělou sbírku videoher.
-            </p>
-            <div class="search">
-              <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <input type="search" placeholder="Vyhledejte svou hru..." />
+          <h1>Vítejte ve VaultGames</h1>
+          <p>
+            Jsme domovem pro vaše nejžhavější herní příběhy! Prozkoumejte naši
+            skvělou sbírku videoher.
+          </p>
+          <div class="search">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="search" placeholder="Vyhledejte svou hru..." />
           </div>
         </main>
       </section>
 
       <!-- Sekce novinky -->
       <section class="news">
-        <h2 class="title">Novinky</h2>
+        <header>
+          <h2 class="title">Novinky</h2>
+          <span>Zobrazit vše</span>
+        </header>
         <div class="news-content">
           <div class="news-card">
             <div class="news-card_img">
-              <img src="./images/fifa.png" alt="fifa 24"/>
+              <img src="./images/fifa.png" alt="fifa 24" />
             </div>
             <div class="news-card_content">
               <div class="news-card_top">
@@ -83,11 +101,11 @@
           </div>
           <div class="news-card">
             <div class="news-card_img">
-              <img src="./images/diablo.png" alt="fifa 24"/>
+              <img src="./images/diablo.png" alt="fifa 24" />
             </div>
             <div class="news-card_content">
               <div class="news-card_top">
-                <h3>Diablo 4 </h3>
+                <h3>Diablo 4</h3>
                 <div class="favorite"><i class="fa-regular fa-heart"></i></div>
               </div>
               <div class="news-card_bot">
@@ -97,7 +115,7 @@
           </div>
           <div class="news-card">
             <div class="news-card_img">
-              <img src="./images/mortal.png" alt="fifa 24"/>
+              <img src="./images/mortal.png" alt="fifa 24" />
             </div>
             <div class="news-card_content">
               <div class="news-card_top">
@@ -111,7 +129,7 @@
           </div>
           <div class="news-card">
             <div class="news-card_img">
-              <img src="./images/spider.png" alt="fifa 24"/>
+              <img src="./images/spider.png" alt="fifa 24" />
             </div>
             <div class="news-card_content">
               <div class="news-card_top">
@@ -125,7 +143,7 @@
           </div>
           <div class="news-card">
             <div class="news-card_img">
-              <img src="./images/call.png" alt="fifa 24"/>
+              <img src="./images/call.png" alt="fifa 24" />
             </div>
             <div class="news-card_content">
               <div class="news-card_top">
@@ -139,20 +157,148 @@
           </div>
         </div>
       </section>
+
+      <!-- Sekce soon -->
+
+      <section class="news">
+        <header>
+          <h2 class="title">Budou vycházet</h2>
+          <span>Zobrazit vše</span>
+        </header>
+        <div class="news-content">
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/prince.png" alt="prince of persia" />
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Prince of Persia</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$70</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/batman.png" alt="batman arkham trilogy" />
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Batman Arkham Trilogy</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$45</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img
+                src="./images/avatar.png"
+                alt="avatar frontiers of pandora"
+              />
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Avatar Frontiers of Pandora</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$80</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/tekken.png" alt="tekken 8" />
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Tekken 8</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$60</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/city.png" alt="Cities Skylines" />
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Cities Skylines</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$55</span></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sekce black friday -->
+
+      <section class="sale">
+        <h2>Black Friday!</h2>
+        <p>
+          Black Friday na našem eshopu! Slevy až 80% na nejnovější hry. <br />
+          Nezmeškejte akci! Nakupujte teď a zažijte dobrodružství za
+          bezkonkurenční ceny.
+        </p>
+      </section>
     </main>
 
-    <script>
-      const parent= document.querySelector(".favorite")
-      const favorite = document.querySelector(".favorite i")
+    <footer>
+      <h3>Nenech si ujít novinky</h3>
+      <div class="footer-input">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Váš email..." />
+        <button>Odebírat</button>
+      </div>
+      <div class="footer-bottom">
+        <span>©2023 VaultGames Inc.</span>
+        <span>·</span>
+        <span>Všechna práva vyhrazena</span>
+      </div>
+    </footer>
 
-      favorite.addEventListener("click", () =>{
-        parent.classList.toggle("active")
-        if(parent.classList.contains("active")){
-          favorite.setAttribute("class", "fa-solid fa-heart")
-        }else{
-          favorite.setAttribute("class", "fa-regular fa-heart")
-        }
-      } )
+    <script>
+      // Navbar
+
+      const bars = document.querySelector(".nav-left i");
+      const menu = document.querySelector(".overlay");
+      const exit = document.querySelector(".close");
+
+      bars.addEventListener("click", () => {
+        menu.classList.add("active");
+      });
+
+      exit.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+
+      // Přidat do oblíbených
+      const favorites = document.querySelectorAll(".favorite");
+
+      for (let i = 0; i < favorites.length; i++) {
+        favorites[i].addEventListener("click", function () {
+          const favoriteStar = this.querySelectorAll(".favorite i")[0];
+
+          if (favoriteStar.classList.contains("fa-regular")) {
+            favoriteStar.classList.remove("fa-regular");
+            favoriteStar.classList.add("fa-solid");
+          } else {
+            favoriteStar.classList.remove("fa-solid");
+            favoriteStar.classList.add("fa-regular");
+          }
+        });
+      }
     </script>
   </body>
 </html>
