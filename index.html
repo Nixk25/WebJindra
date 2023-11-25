@@ -18,10 +18,141 @@
     />
   </head>
   <body>
-    <div class="navbar"></div>
-    <i class="fa-solid fa-calendar"></i>
-    <i class="fa-solid fa-heart"></i>
-    <i class="fa-solid fa-cart-saadsashopping"></i>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-top">
+        <figure class="logo">
+          <img src="./images/logo.svg" alt="logo for vault games" />
+        </figure>
+        <div class="nav-right">
+          <i class="fa-solid fa-calendar"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="user">J</div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="nav-bot">
+        <ul class="filters">
+          <li>PlayStation</li>
+          <li>Xbox</li>
+          <li>Nintendo</li>
+          <li>PC</li>
+          <li>Bazar</li>
+          <li>Přislušenství</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Sekce hero -->
+      <section class="hero">
+        <main class="hero-content">
+          <div class="container">
+            <h1>Vítejte ve VaultGames</h1>
+            <p>
+              Jsme domovem pro vaše nejžhavější herní příběhy! Prozkoumejte
+              naši skvělou sbírku videoher.
+            </p>
+            <div class="search">
+              <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <input type="search" placeholder="Vyhledejte svou hru..." />
+          </div>
+        </main>
+      </section>
+
+      <!-- Sekce novinky -->
+      <section class="news">
+        <h2 class="title">Novinky</h2>
+        <div class="news-content">
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/fifa.png" alt="fifa 24"/>
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Fifa 24</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$60</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/diablo.png" alt="fifa 24"/>
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Diablo 4 </h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$65</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/mortal.png" alt="fifa 24"/>
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Mortal Kombat 1</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$60</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/spider.png" alt="fifa 24"/>
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Marvel's Spider-Man 2</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$55</span></strong>
+              </div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card_img">
+              <img src="./images/call.png" alt="fifa 24"/>
+            </div>
+            <div class="news-card_content">
+              <div class="news-card_top">
+                <h3>Call of Duty Modern Warfare 3</h3>
+                <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="news-card_bot">
+                <strong><span>$35</span></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const parent= document.querySelector(".favorite")
+      const favorite = document.querySelector(".favorite i")
+
+      favorite.addEventListener("click", () =>{
+        parent.classList.toggle("active")
+        if(parent.classList.contains("active")){
+          favorite.setAttribute("class", "fa-solid fa-heart")
+        }else{
+          favorite.setAttribute("class", "fa-regular fa-heart")
+        }
+      } )
+    </script>
   </body>
-  blablabla
 </html>
