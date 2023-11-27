@@ -24,10 +24,6 @@ body {
   max-width: 80%;
   height: 100%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .navbar {
@@ -514,5 +510,105 @@ footer h3 {
 
   .nav-top .logo {
     margin-bottom: 10px;
+  }
+}
+
+/* Sekce user */
+
+.user-main {
+  height: 80vh;
+  padding-top: 150px;
+}
+.user-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main-left {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-right {
+  width: 35%;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  margin-right: 50px;
+}
+
+.subtitle {
+  font-family: "Silkscreen", cursive;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email,
+.username,
+.full-name {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 10px var(--primary-color);
+}
+
+@media (max-width: 950px) {
+  .main-left {
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .main-right {
+    display: none;
+  }
+
+  .user-main {
+    padding-top: 85px;
+    text-align: center;
+  }
+
+  .avatar {
+    margin-right: 0;
+  }
+
+  .email,
+  .username,
+  .full-name {
+    flex-direction: column;
+    text-align: centers;
   }
 }
