@@ -506,6 +506,12 @@ footer h3 {
     flex-direction: column;
   }
 
+  .nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .nav-top .logo {
     margin-bottom: 10px;
   }
