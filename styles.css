@@ -301,6 +301,8 @@ footer {
   flex-direction: column;
   gap: 20px;
   padding: 10px 0;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
 }
 
 footer h3 {
