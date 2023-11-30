@@ -646,6 +646,11 @@ footer h3 {
   flex-direction: column;
   gap: 20px;
   max-width: max-content;
+  transition: scale 200ms ease;
+}
+
+.login-wrapper:hover{
+  scale: 1.05;
 }
 
 .login-wrapper>div{
@@ -659,8 +664,11 @@ footer h3 {
 
 .checkbox{
   accent-color: var(--primary-color);
-  margin-right: 5px;
+  margin-right: 3px;
   cursor: pointer;
+}
+.stay{
+  margin-left: -5px;
 }
 
 .login-bottom{
@@ -749,4 +757,5 @@ footer h3 {
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
+  cursor: pointer;
 }
