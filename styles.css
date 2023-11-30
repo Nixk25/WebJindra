@@ -614,3 +614,139 @@ footer h3 {
     text-align: centers;
   }
 }
+
+
+
+
+/* sekce login */
+
+.login{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right top, var(--primary-color), var(--second-color));
+}
+
+.login-headline{
+  font-family: 'Silkscreen', cursive;
+  font-size: 2.5rem;
+}
+
+.login-wrapper{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px #000;
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: max-content;
+}
+
+.login-wrapper>div{
+  position: relative;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkbox{
+  accent-color: var(--primary-color);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.login-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.color{
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.login-logo{
+  position: absolute;
+  top: -120px;
+  width: 100%;
+  height: 130px;
+  mix-blend-mode: difference;
+}
+
+.login-btn{
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-family: "Space mono", monospace;
+  cursor: pointer;
+  transition: scale 200ms ease;
+}
+
+.login-btn:hover{
+  scale: 1.03;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input input{
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  padding-left: 35px;
+  border: none;
+  outline: 3px solid transparent;
+  font-family: "Space mono", monospace;
+  background-color: rgba(0, 0, 0, 0.1);
+  caret-color: var(--primary-color);
+}
+
+.input input:focus{
+  outline: 3px solid var(--primary-color);
+}
+
+.input label{
+  text-align: start;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-wrapper{
+  position: relative;
+}
+.input-wrapper>i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.password-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
